@@ -1,0 +1,14 @@
+{
+  "target_overrides": {
+    "*": {
+      "platform.stdio-convert-newlines": true,
+      "platform.default-serial-baud-rate": 115200,
+      "platform.stdio-baud-rate": 115200,
+      "platform.stdio-flush-at-exit": false
+    },
+    "NRF52840_DK": {
+      "target.console-uart-flow-control": 1,
+      "target.uart_hwfc": 1
+    }
+  }
+}

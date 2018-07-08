@@ -1,0 +1,6 @@
+.build
+.mbed
+projectfiles
+*.py*
+mbed_settings.py
+BUILD
