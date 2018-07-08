@@ -15,7 +15,7 @@ cd mbed-os-example-spif
 
 ### Now compile
 
-Invoke `mbed compile`, and specify the name of your platform and your favorite toolchain (`GCC_ARM`, `ARM`, `IAR`). For example, for the ARM Compiler 5:
+Invoke `mbed compile`, and specify the name of your platform and your favorite toolchain (`GCC_ARM`, `ARM`, `IAR`). For example, for the ARM_GCC compiler:
 
 ```
 mbed compile -m NRF52840_DK -t GCC_ARM
