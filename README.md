@@ -65,19 +65,14 @@ Image: ./BUILD/NRF52840_DK/GCC_ARM/mbed-os-example-spif.hex
 
 The first block on your flash part has 'Hello World' written to it.
 
-<code>
+```
 spif test
-
 spif size: 8388608
-
 spif read size: 1
-
 spif program size: 1
-
 spif erase size: 4096
-
-Hello World!&#8267;
-</code>
+Hello World!
+```
 
 ## Troubleshooting
 
