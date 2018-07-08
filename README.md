@@ -15,10 +15,10 @@ cd mbed-os-example-spif
 
 ### Now compile
 
-Invoke `mbed compile`, and specify the name of your platform and your favorite toolchain (`GCC_ARM`, `ARM`, `IAR`). For example, for the ARM_GCC compiler:
+Invoke `mbed compile`, and specify the name of your platform and your favorite toolchain (`GCC_ARM`, `ARM`, `IAR`). For example, the ARM_GCC compiler:
 
 ```
-mbed compile -m NRF52840_DK -t GCC_ARM
+mbed compile --target NRF52840_DK --toolchain GCC_ARM
 ```
 
 Your PC may take a few minutes to compile your code. At the end, you see the following result:
@@ -51,6 +51,8 @@ Total Static RAM memory (data + bss): 19504 bytes
 Total Flash memory (text + data): 176168 bytes
 
 Image: ./BUILD/NRF52840_DK/GCC_ARM/mbed-os-example-spif.hex
+*note: this build also includes the Nordic softdevice
+       resulting in a larger combined final binary
 ```
 
 ### Program your board
