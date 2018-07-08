@@ -9,8 +9,8 @@ Please install [mbed CLI](https://github.com/ARMmbed/mbed-cli#installing-mbed-cl
 From the command-line, import the example:
 
 ```
-mbed import mbed-os-example-spif-driver
-cd mbed-os-example-spif-driver
+mbed import mbed-os-example-spif
+cd mbed-os-example-spif
 ```
 
 ### Now compile
@@ -50,7 +50,7 @@ Your PC may take a few minutes to compile your code. At the end, you see the fol
 Total Static RAM memory (data + bss): 19504 bytes
 Total Flash memory (text + data): 176168 bytes
 
-Image: ./BUILD/NRF52840_DK/GCC_ARM/mbed-os-example-spif-driver.hex
+Image: ./BUILD/NRF52840_DK/GCC_ARM/mbed-os-example-spif.hex
 ```
 
 ### Program your board
@@ -62,6 +62,15 @@ Image: ./BUILD/NRF52840_DK/GCC_ARM/mbed-os-example-spif-driver.hex
 1. Observe reading and writing flash
 
 The first block on your flash part has 'Hello World' written to it.
+
+```
+spif test
+spif size: 8388608
+spif read size: 1
+spif program size: 1
+spif erase size: 4096
+Hello World!
+```
 
 ## Troubleshooting
 
