@@ -51,6 +51,7 @@ Total Static RAM memory (data + bss): 19504 bytes
 Total Flash memory (text + data): 176168 bytes
 
 Image: ./BUILD/NRF52840_DK/GCC_ARM/mbed-os-example-spif.hex
+
 *note: this build also includes the Nordic softdevice
        resulting in a larger combined final binary
 ```
